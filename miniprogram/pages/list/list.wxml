@@ -1,0 +1,12 @@
+<!--miniprogram/pages/list/list.wxml-->
+<view class="container"> 
+  <view wx:if="{{datalist[0]._id != ''}}" class="news" wx:for="{{datalist}}" wx:key="_id">
+      <view class="news-text" bindtap='jumpToUrl' id='{{item.newsUrl}}'>
+        <text>{{item.creationTime}}：{{item.content}}</text>
+      </view>
+  </view>
+  <view class="body-view" hidden="{{hidden}}"> 
+      别扯了^_^，到底了... 
+  </view> 
+</view>
+

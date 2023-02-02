@@ -1,0 +1,68 @@
+<!--miniprogram/pages/bihua/bihua.wxml-->
+<view class="container" >
+  <view class="search-bar">
+    <form bindsubmit="formSubmit">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input name="ziinput" placeholder="请输入一个要查笔画的字" bindinput="inputChange"/>
+      <button type="primary" formType="submit">查</button>
+    </form>
+  </view>
+  <view class="header-bg"></view>
+  <view class="book-content">
+    <view>
+      <view class="book-list">
+        <view class="book-image">
+          <image src="cloud://carsonlib.6361-carsonlib/allbihua/{{hid}}.gif" mode="aspectFit"></image>
+        </view>
+      </view>
+      <view class="line"></view>
+    </view>
+  </view>
+  <view class="news">
+    <view class="news-text">
+      <text>拼音: </text>
+      <text>{{voice1}}</text>
+      <image class="icon-image" bindtap="playVoice" data-voice='{{voice1}}' src="{{voice1url}}" mode="aspectFit"></image>
+      <text>{{voice2}}</text>
+      <image class="icon-image" bindtap="playVoice" data-voice='{{voice2}}' src="{{voice2url}}" mode="aspectFit"></image>
+      <text>{{voice3}}</text>
+      <image class="icon-image" bindtap="playVoice" data-voice='{{voice3}}' src="{{voice3url}}" mode="aspectFit"></image>
+      <text>{{voice4}}</text>
+      <image class="icon-image" bindtap="playVoice" data-voice='{{voice4}}' src="{{voice4url}}" mode="aspectFit"></image>
+      <text>{{voice5}}</text>
+      <image class="icon-image" bindtap="playVoice" data-voice='{{voice5}}' src="{{voice5url}}" mode="aspectFit"></image>
+      <text>{{voice6}}</text>
+      <image class="icon-image" bindtap="playVoice" data-voice='{{voice6}}' src="{{voice6url}}" mode="aspectFit"></image>
+    </view>
+    <view class="line"></view>
+    <view class="news-text-orange">
+      <text></text><text>{{details}}</text>
+    </view>
+    <view class="line"></view>
+    <!-- <view class="news-text">
+      <text></text><text>{{bishun}}</text>
+    </view>
+    <view class="line"></view>
+    <view class="news-text">
+      <text></text><text>{{designation}}</text>
+    </view>
+    <view class="line"></view> -->
+    <view class="news-text">
+      <text>组词：\r\n </text><text>{{zuci}}</text>
+    </view>
+    <view class="line"></view>
+    <view class="news-text-orange">
+      <text></text><text>{{jyc}}</text>
+    </view>
+    <view class="line"></view>
+    <view class="news-text-orange">
+      <text></text><text>{{fyc}}</text>
+    </view>
+    <view class="line"></view>
+    <view class="news-text">
+      <text></text><text>{{shiyi}}</text>
+    </view>
+    <view class="line"></view>
+  </view>
+</view>
+

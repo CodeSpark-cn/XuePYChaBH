@@ -1,0 +1,44 @@
+<!--miniprogram/pages/myIndex/myIndex.wxml-->
+
+<view class="container" >
+  <view class="news">
+    <view class="news-text">
+      <input placeholder="请输入内容" value='{{balletContent}}' bindinput="inputContent"/>
+    </view>
+  </view>
+  <view class="news">
+    <view class="news-text">
+      <radio-group class="radio-group" bindchange="radioStatus">
+        <label class="radio" wx:for="{{showStatus}}" wx:key="{{item.value}}">
+          <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+        </label>
+      </radio-group>
+    </view>
+  </view>
+  <view class="news">
+    <view class="news-text">
+      <input placeholder="请输入图片地址" value='{{coverUrl}}' bindchange="coverUrlChange"/>
+    </view>
+  </view>
+  <view class="news">
+    <view class="news-text">
+      <button type="default" bindtap="coverTheCover">点击上传图片</button>
+    </view>
+  </view>
+  <view class="news">
+    <view class="news-text">
+      <button type='primary' bindtap="submitContent">发布</button>
+    </view>
+  </view>
+  <view wx:if="{{dataList[0]._id != ''}}" class="news" style="display: flex;flex-direction: column;" wx:for="{{dataList}}" wx:key="_id">
+      <view style="flex:1;width:100%;text-align:center;" hidden="{{item.stills == ''}}">
+        <image mode="aspectFit" src="{{item.stills}}"></image>
+      </view>
+      <view class="news-text" style="flex:1;width:100%;" bindtap='jumpToUrl' id='{{item._id}}'>
+        <text style="margin: 20rpx;">{{item.creationTime}}：{{item.content}}</text>
+      </view>
+  </view>
+  <view class="body-view" hidden="{{hidden}}"> 
+      别扯了^_^，到底了... 
+  </view> 
+</view>

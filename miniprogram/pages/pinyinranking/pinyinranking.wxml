@@ -1,0 +1,29 @@
+<!--miniprogram/pages/pinyinranking/pinyinranking.wxml-->
+
+<view class="container" >
+    <view class="news" style="display: flex;flex-direction: column;">
+        <view class="news-text" style="flex:1;width:100%;">
+          <text>第1名：蓝梓航 </text><image src='../../images/star.png' /><text>9999</text>
+        </view>
+    </view>
+    <view class="news" style="display: flex;flex-direction: column;">
+        <view class="news-text" style="flex:1;width:100%;">
+          <text>第2名：蓝梓航 </text><image src='../../images/star.png' /><text>9999</text>
+        </view>
+    </view>
+    <view class="news" style="display: flex;flex-direction: column;">
+        <view class="news-text" style="flex:1;width:100%;">
+          <text>第3名：蓝梓航 </text><image src='../../images/star.png' /><text>9999</text>
+        </view>
+    </view>
+    <view class="news" style="display: flex;flex-direction: column;">
+        <view class="news-text" style="flex:1;width:100%;">
+          <text>第4名：蓝梓航 </text><image src='../../images/star.png' /><text>9999</text>
+        </view>
+    </view>
+    <view class="news" style="display: flex;flex-direction: column;">
+        <view class="news-text" style="flex:1;width:100%;">
+          <text>第5名：蓝梓航 </text><image src='../../images/star.png' /><text>9999</text>
+        </view>
+    </view>
+</view>

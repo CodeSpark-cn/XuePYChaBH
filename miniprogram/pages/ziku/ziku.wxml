@@ -1,0 +1,38 @@
+<!--miniprogram/pages/ziku/ziku.wxml-->
+<view class="container" >
+    <view class="news" style="display: flex;flex-direction: column;">
+        <view class="news-text" style="flex:1;width:100%;">
+          <text>点击下边列表选择你需要练习的字库：</text>
+        </view>
+    </view>
+    <view class="news" style="display: flex;flex-direction: column;">
+        <view class="news-text" style="flex:1;width:100%;">
+          <text>选择一年级字库 </text>
+        </view>
+    </view>
+    <view class="news" style="display: flex;flex-direction: column;">
+        <view class="news-text" style="flex:1;width:100%;">
+          <text>选择二年级字库 </text><image src='../../images/flower.png' />
+        </view>
+    </view>
+    <view class="news" style="display: flex;flex-direction: column;">
+        <view class="news-text" style="flex:1;width:100%;">
+          <text>选择三年级字库 </text>
+        </view>
+    </view>
+    <view class="news" style="display: flex;flex-direction: column;">
+        <view class="news-text" style="flex:1;width:100%;">
+          <text>选择四年级字库 </text>
+        </view>
+    </view>
+    <view class="news" style="display: flex;flex-direction: column;">
+        <view class="news-text" style="flex:1;width:100%;">
+          <text>选择五年级字库 </text>
+        </view>
+    </view>
+    <view class="news" style="display: flex;flex-direction: column;">
+        <view class="news-text" style="flex:1;width:100%;">
+          <text>选择六年级字库 </text>
+        </view>
+    </view>
+</view>

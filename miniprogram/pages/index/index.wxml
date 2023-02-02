@@ -1,0 +1,15 @@
+<!--miniprogram/pages/index/index.wxml-->
+
+<view class="container" >
+    <view wx:if="{{dataList[0]._id != ''}}" class="news" style="display: flex;flex-direction: column;" wx:for="{{dataList}}" wx:key="_id">
+        <view style="flex:1;width:100%;text-align:center;" hidden="{{item.stills == ''}}">
+          <image mode="aspectFit" src="{{item.stills}}"></image>
+        </view>
+        <view class="news-text" style="flex:1;width:100%;" bindtap='jumpToUrl' id='{{item._id}}'>
+          <text style="margin: 20rpx;">{{item.creationTime}}：{{item.content}}</text>
+        </view>
+    </view>
+    <view class="body-view" hidden="{{hidden}}"> 
+      别扯了^_^，到底了... 
+  </view> 
+</view>

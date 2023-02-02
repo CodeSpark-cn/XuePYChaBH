@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/bihua/bihua",
+    "pages/pinyinranking/pinyinranking",
+    "pages/pinyin/pinyin",
+    "pages/index/index",
+    "pages/myIndex/myIndex",
+    "pages/list/list",
+    "pages/ziku/ziku"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "学拼音查笔画",
+    "navigationBarTextStyle": "black",
+    "onReachBottomDistance": 100
+  },
+  "sitemapLocation": "sitemap.json"
+}
